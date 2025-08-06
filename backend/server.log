@@ -1,0 +1,19 @@
+Attempting to connect to MongoDB...
+(node:5986) [MONGOOSE] Warning: Duplicate schema index on {"messageId":1} found. This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:5986) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(node:5986) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+🚀 Server running on port 5000
+📱 WhatsApp Web Clone API Server started
+🌐 Server URL: http://localhost:5000
+📊 Health Check: http://localhost:5000/health
+🗄️  Database Status: Disconnected
+
+📋 To enable full functionality:
+   1. Set up MongoDB Atlas (free tier available)
+   2. Or install MongoDB locally
+   3. Update MONGODB_URI in .env file
+   4. Run: npm run process-payloads
+❌ Database connection error: querySrv ENOTFOUND _mongodb._tcp.cluster.mongodb.net
+🔄 Continuing without database connection...
+📝 Note: For full functionality, set up MongoDB Atlas or local MongoDB
