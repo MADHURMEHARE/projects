@@ -1,15 +1,4 @@
-(cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF'
-diff --git a/README.md b/README.md
---- a/README.md
-+++ b/README.md
-@@ -1,2 +1,344 @@
--# projects
--A simple course website built using pure HTML. This project includes essential sections like course details, schedules, and instructor information. Designed for straightforward navigation, it provides a basic, functional structure without the use of CSS or additional styling.
-+# WhatsApp Web Clone
-+
-+A WhatsApp Web-like chat interface that displays real-time conversations using webhook data. This application mimics WhatsApp Web's design and functionality, allowing users to view conversations and send messages (stored locally, not sent externally).
-+
-+## 🚀 Live Demo
+## 🚀 Live Demo
 +
 +- **Frontend**: [https://whatsapp-web-clone-frontend.vercel.app](https://whatsapp-web-clone-frontend.vercel.app)
 +- **Backend API**: [https://whatsapp-web-backend.onrender.com](https://whatsapp-web-backend.onrender.com)
