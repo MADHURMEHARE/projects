@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: whatsapp-web-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        fromDatabase:
+          name: whatsapp-mongodb
+          property: connectionString
+    autoDeploy: false
+
+databases:
+  - name: whatsapp-mongodb
+    databaseName: whatsapp
+    user: whatsapp_user
+    plan: free
